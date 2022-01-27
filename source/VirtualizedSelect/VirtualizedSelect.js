@@ -15,7 +15,7 @@ export default class VirtualizedSelect extends Component {
     maxHeight: PropTypes.number,
     optionHeight: PropTypes.oneOfType([PropTypes.number, PropTypes.func]),
     optionRenderer: PropTypes.func,
-    selectComponent: PropTypes.func
+    selectComponent: PropTypes.oneOfType([PropTypes.object, PropTypes.func])
   };
 
   static defaultProps = {
